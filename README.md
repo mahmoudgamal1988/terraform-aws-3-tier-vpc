@@ -1,7 +1,6 @@
 # Design a 3 Tier AWS VPC with NAT Gateways using Terraform
 
 ## Step-01: Introduction
-- Understand about Terraform Modules
 - Create VPC using `Terraform Modules`
 - Define `Input Variables` for VPC module and reference them in VPC Terraform Module
 - Define `local values` and reference them in VPC Terraform Module
@@ -11,9 +10,9 @@
 
 ## Step-02: v1-vpc-module - Hardcoded Model
 ### Step-02-01: How to make a decision of using the public Registry module?
-1. Understand about [Terraform Registry and Modules](https://registry.terraform.io/)
+1. Use [Terraform Registry and Modules](https://registry.terraform.io/)
 2. We are going to use a [VPC Module](https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest) from Terraform Public Registry
-3. Understand about Authenticity of a module hosted on Public Terraform Registry with [HashiCorp Verified Tag](https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest)
+3. Authenticity of a module hosted on Public Terraform Registry with [HashiCorp Verified Tag](https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest)
 4. Review the download rate for that module
 5. Review the latest versions and [release history](https://github.com/terraform-aws-modules/terraform-aws-vpc/releases) of that module
 6. Review our feature needs when using that module and ensure if our need is satisfied use the module else use the standard terraform resource definition appraoch. 
@@ -145,7 +144,7 @@ variable "business_divsion" {
 ```
 
 ## Step-06: c3-local-values.tf
-- Understand about [Local Values](https://www.terraform.io/docs/language/values/locals.html)
+- Use [Local Values](https://www.terraform.io/docs/language/values/locals.html)
 ```t
 # Define Local Values in Terraform
 locals {
